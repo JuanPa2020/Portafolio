@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,39 +7,7 @@
 
 body{
     color: white;
-    font-family: 'Poppins';
     background: linear-gradient(90deg, #00C6FF 0%, #0072FF 100%); 
-}
-
-.menu{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 20px;
-    font-size: 30px;
-}
-
-.menu li a{
-    position: absolute;
-    width: 611px;
-    height: 92px;
-    left: calc(50% - 611px/2 + 22.5px);
-    top: calc(50% - 92px/2 - 264px);
-}
-
-.menu li{
-    display: inline-block;
-    text-align: center;
-}
-
-.menu li a:hover{
-    background: 00C2FF;
-}
-
-.menu img{
-    width: 50px;
-    height: 50px;
-    position: left;
 }
 
 .menu, .redes{
@@ -51,26 +18,29 @@ body{
 
 .logo{
     position: absolute;
-    width: 25px;
-    height: 25px;
-    left: 1086px;
-    top: 25px;
+    width: 15px;
+    height: 15px;
+    left: 1098px;
+    top: 3%;
 }
 
 .contenedor-textos{
-    position: absolute;
+    display: block;
+    position: relative;
     width: 737px;
     height: 173px;
     left: 465px;
-    top: 223px;
+    top: 130px;
     text-align: center;
     border-radius: 20px;
     border: 2px solid white;
 }
 
-.contenedor-textos h1{
-    font-family: 'Poppins';
-    font-size: 53px;
+.titulo{
+    font-family: 'Poppins', sans-serif;
+    -webkit-text-stroke: 0.1px black;
+    display: block;
+    font-size: 43px;
     font-style: normal;
     font-weight: 700;
     line-height: 80px;
@@ -79,11 +49,64 @@ body{
     color: #00C2FF;
 }
 
+.subtitulo{
+    display: block;
+}
+
+.subtitulo, .iconify{
+    position: relative;
+    top: 5%;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.iconify{
+    animation: mano ease-in 1s infinite alternate;
+}
+
+@keyframes mano{
+    0%{
+        transform: scale(1);
+    }100%{
+        transform: scale(1.15);
+    }
+}
+
+
+.tecnologias{
+    display: block;
+    position: relative;
+    width: 737px;
+    height: 173px;
+    float: right;
+    top: 140px;
+}
+
 .mi-foto{
-    position: absolute;
+    position: fixed;
     width: 685px;
     height: 762px;
     left: 0px;
     top: 157px;
-    margin-bottom: 0px;
+}
+
+.slider{
+    position: fixed;
+    right: 0px;
+    top: 525px;
+    display: flex;
+    max-width: 500px;
+    height: 180px;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+}
+
+.slider img{
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
 }
