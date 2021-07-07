@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,57 +7,102 @@
 }
 
 body{
-    color: white;
-    background: linear-gradient(90deg, #00C6FF 0%, #0072FF 100%); 
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background: #0072FF; 
+    -webkit-text-stroke: 1px black;
 }
 
-.menu, .redes{
-    margin-top: 3%;
-    padding-left: 5%;
-    display: inline-block;
-}
-
-.logo{
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    left: 1098px;
-    top: 3%;
-}
-
-.contenedor-textos{
+/*-----------   Styles for header   -------------------*/
+a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 3%;
+  }
+  
+  /* Navigation */
+  .nav-main {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+    -webkit-text-stroke: 1px black;
+  }
+  
+  .nav-brand {
+    width: 80px;
+  }
+  
+  /* Navbar Left */
+  .nav-main ul {
+    display: flex;
+  }
+  
+  .nav-main ul li {
+    padding: 30px;
+  }
+  
+  .nav-main ul li a {
+    padding: 25px;
+  }
+  
+  .nav-main ul li a:hover {
+    border-bottom: 2px solid #fff;
+  }
+  
+  .nav-main ul.nav-menu {
+    flex: 1;
+    margin-left: 5px;
+  }
+  
+/*----------------   Styles for body    ---------------------------------*/
+.contenedor-textos {
     display: block;
     position: relative;
+    color: white;
     width: 737px;
     height: 173px;
     left: 465px;
     top: 130px;
-    text-align: center;
     border-radius: 20px;
     border: 2px solid white;
 }
 
 .titulo{
-    font-family: 'Poppins', sans-serif;
-    -webkit-text-stroke: 0.1px black;
+    margin-left: 10px;
     display: block;
     font-size: 43px;
-    font-style: normal;
-    font-weight: 700;
+    font-style:oblique;
+    font-weight: bold;
     line-height: 80px;
-    letter-spacing: 0em;
-    text-align: justified;
+    text-align: left;
     color: #00C2FF;
 }
 
 .subtitulo{
     display: block;
+    font-weight: bold;
+}
+
+h3{
+    display: block;
+    font-weight: bold;
 }
 
 .subtitulo, .iconify{
     position: relative;
     top: 5%;
-    margin-left: 15px;
+    left: 15px;
     display: inline-block;
 }
 
@@ -72,13 +118,12 @@ body{
     }
 }
 
-
-.tecnologias{
+.tecnologias {
     display: block;
     position: relative;
-    width: 737px;
-    height: 173px;
-    float: right;
+    width: 250px;
+    height: 45px;
+    left: 970px;
     top: 140px;
 }
 
@@ -87,9 +132,11 @@ body{
     width: 685px;
     height: 762px;
     left: 0px;
-    top: 157px;
+    top: 170px;
 }
 
+
+/*----------------------    Styles for footer   -----------------------------*/
 .slider{
     position: fixed;
     right: 0px;
@@ -109,4 +156,14 @@ body{
     width: 100%;
     object-fit: cover;
     scroll-snap-align: center;
+}
+
+.h3 {
+    display: block;
+    margin-bottom: 0px;
+    position: relative;
+    top: 180px;
+    left: 740px;
+    color: white;
+    size: 20px;
 }
