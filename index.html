@@ -5,11 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Style-home.css">
-        <link rel="icon" href="Imagenes-web/logo-icono.ico">
-        <title>Juan Pablo Gutiérrez</title>
+        <link rel="icon" href="Imagenes-web/logo.ico">
+        <script src="servidor.js"></script>
+        <title>HOME</title>
     </head>
 
     <body> 
+    <main>
 
       <div class="container">
         <nav class="nav-main">
@@ -17,11 +19,11 @@
           <a href="https://www.linkedin.com/in/juan-pablo-gutierréz-lópez-750798190/"><img src="Imagenes-web/icon.likedin.svg" alt="TechNews Logo" class="nav-brand"></a>
           <a href="https://www.youtube.com/channel/UCyDCr13u7VJkvtRorDunUyQ"><img src="Imagenes-web/icon-yt.svg" alt="TechNews Logo" class="nav-brand"></a>
 
-          <ul class="nav-menu">
-            <li> <a href="">HOME</a></li>
-            <li><a href="">BRIEFCASE</a></li>
-            <li><a href="">SKILLS </a></li>
-            <li><a href="">CONTAC</a></li>
+          <ul class="nav-menu" onclick="aviso()">
+            <li id="home" ><a href="#">HOME</li>
+            <li><a href="#">PORTAFOLIO</a></li>
+            <li><a href="#">SKILLS </a></li>
+            <li><a href="#">CONTAC</a></li>
           </ul>
 
           <ul class="nav-menu-right">
@@ -30,8 +32,9 @@
             </li>
           </ul>
         </nav>
+      </div>
 
-      <main class="contenido"> 
+      <section class="contenido"> 
           <div class="mi-foto">
               <img src="Imagenes-web/foto.svg" alt="">
           </div>
@@ -53,15 +56,14 @@
           <div class="slide">
             <h3 class="subtitulo-2">Recent Projects</h3>
             <div class="slider">
-                <img src="Imagenes-web/1.jpeg" alt="">
+                <img href="https://www.youtube.com/channel/UCyDCr13u7VJkvtRorDunUyQ" src="Imagenes-web/1.jpeg" alt="">
                 <img src="Imagenes-web/2.jpeg" alt="">
                 <img src="Imagenes-web/3.jpeg" alt="">
             </div>
           </div>
+        </section>
+
       </main>
       
-      <footer class="footer">
-
-      </footer>
     </body>
 </html>
